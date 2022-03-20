@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Productos() {
+export default function Productos() {
   return (
     <div>Productos</div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Facturas() {
+ export default function Facturas() {
   return (
     <div>Facturas</div>
   )
