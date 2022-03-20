@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './componentes/Home'
 import Clientes from './componentes/Clientes'
 import Facturas from './componentes/Facturas'
-import productos from './componentes/Productos'
+import Productos from './componentes/Productos'
 
 ReactDOM.render(
  <BrowserRouter>
@@ -13,7 +13,7 @@ ReactDOM.render(
      <Route path="/" element={<Home></Home>}/> 
      <Route path="/facturas" element={<Facturas></Facturas>}/> 
      <Route path="/clientes" element={<Clientes></Clientes>}/> 
-    
+     <Route path="/productos" element={<Productos></Productos>}/> 
    </Routes>
  </BrowserRouter>,
   document.getElementById('root')
