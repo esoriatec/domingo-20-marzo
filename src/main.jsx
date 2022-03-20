@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './componentes/Home'
+import Clientes from './componentes/Clientes'
+import Facturas from './componentes/Facturas'
+import productos from './componentes/Productos'
 
 ReactDOM.render(
  <BrowserRouter>

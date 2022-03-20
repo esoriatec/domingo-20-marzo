@@ -5,5 +5,3 @@ function Facturas() {
     <div>Productos</div>
   )
 }
-
-export default Productos
