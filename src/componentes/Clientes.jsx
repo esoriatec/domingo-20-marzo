@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Facturas() {
+function Clientes() {
   return (
     <div>Clientes</div>
   )

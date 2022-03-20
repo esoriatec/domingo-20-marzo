@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Facturas() {
+function Productos() {
   return (
     <div>Productos</div>
   )
