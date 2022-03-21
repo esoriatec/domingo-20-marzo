@@ -1,19 +1,21 @@
 import React from 'react'
 import {Link, Outlet} from 'react-router-dom'
+import Header from './Header'
+import Footer from './Footer'
+import './Home.css'
+import {QueryClientProvider, QueryClient } from 'react-query'
+
+const queryClient = new QueryClient()
 export default function Home() {
   return (
-    <div className="d-flex flex-column container fullscreen">
-        <header>
-          <ul>
-            <li><Link to="/clientes">Clientes</Link></li>
-            <li><Link to="/productos">Productos</Link></li>
-            <li><Link to="/facturas">Facturas</Link></li>
-          </ul>
-        </header>
-        <main  className="flex-grow-1">
+    <QueryClientProvider client={queryClient}>
+    <div className="container d-flex flex-column justify-content-between fullscreen todo">
+      <Header></Header>
+        <main className="flex-grow-1">
             <Outlet />
         </main>
-        <footer>pie</footer>
+        <Footer ></Footer>
     </div> 
+    </QueryClientProvider>
   )
 }
