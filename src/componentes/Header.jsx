@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom'
 function Header() {
   return (
     <header >
+        
         <ul className='list-group list-group-horizontal'>
+            <li className='list-group-item'><a href="https://www.pngwing.com/es/free-png-psmty"></a></li>
             <li className="list-group-item"><Link to="/clientes">Clientes</Link></li>
             <li className="list-group-item"><Link to="/productos">Productos</Link></li>
             <li className="list-group-item"><Link to="/facturas">Facturas</Link></li>
